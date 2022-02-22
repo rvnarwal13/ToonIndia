@@ -1,0 +1,153 @@
+body {
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+  background-color: #f3ebf6;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+form {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.header {
+  padding: 10px;
+  font-size: 16px;
+  color: rgb(197, 80, 80);
+  background-color: #333;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.main {
+  display: flex;
+  flex-flow: row;
+  margin: 0% 5%;
+}
+
+.left {
+  flex-basis: 35%;
+}
+
+.left img {
+  width: auto;
+  height: 60vh;
+}
+
+.right {
+  flex-basis: 65%;
+  margin: 5% 10%;
+}
+
+.cover {
+  padding-top: 50px;
+}
+
+.un {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.un:focus {
+  border: 2px solid rgba(0, 0, 0, 0.18) !important;
+}
+
+#btns {
+  text-align: justify;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  align-items: center;
+  transition: 0.3s;
+  font-size: medium;
+  align-self: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+  padding: 14px 28px;
+}
+
+.preview {
+  background-color: #555;
+}
+
+.preview:hover {
+  background-color: #333;
+}
+
+.create {
+  background-color: #4caf50;
+}
+
+.create:hover {
+  background-color: #46a049;
+}
+
+.cancel {
+  background-color: #f44336;
+}
+
+.cancel:hover {
+  background: #da190b;
+}
+
+@media only screen and (max-width: 780px) {
+  .main {
+    display: flex;
+    flex-flow: column;
+    margin: 0% 2.5%;
+  }
+  .left {
+    flex-basis: 100%;
+    margin: 5% 0;
+  }
+  .right {
+    flex-basis: 100%;
+    margin: 5% 0;
+  }
+}
